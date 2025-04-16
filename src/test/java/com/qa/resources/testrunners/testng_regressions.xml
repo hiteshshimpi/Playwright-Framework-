@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart Test Regression PW Suite" thread-count="5"
+	parallel="tests" verbose="4">
+
+	<listeners>
+		<listener
+			class-name="com.qa.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="Open Cart Home Page Test_chrome">
+		<parameter name="appURL" value="https://www.saucedemo.com/v1/index.html"></parameter>
+		<parameter name="browserType" value="chrome"></parameter>
+		<parameter name="UserName" value="standard_user"></parameter>
+		<parameter name="Password" value="secret_sauce"></parameter>
+		<classes>
+			<class name="com.qa.tests.TestCase_VerifyCheckoutFlow" />
+		</classes>
+	</test>
+
+
+	<!-- <test name="Open Cart Home Page Test_chromium">
+		<parameter name="browser" value="chromium" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test> -->
+
+	<!-- <test name="Open Cart Login Page Test_edge1">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test> -->
+
+
+
+
+</suite>
