@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Start Collecting Gold Button Functionality" thread-count="5"
+	parallel="tests" verbose="4">
+
+	<listeners>
+		<listener
+			class-name="com.qa.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="Verify Start Collecting Gold Button is Functional ">
+		<parameter name="appURL" value="https://adjoe-qa-tasks.s3.eu-central-1.amazonaws.com/release/ver2.html"></parameter>
+		<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.tests.TC_001_StartCollectingButtonClickable" />
+		</classes>
+	</test>
+
+</suite>
