@@ -31,7 +31,7 @@ public class TC_001_StartCollectingButtonClickable extends BaseTest {
     public void homePageURLTest() {
         homePage = new HomePage(page);
         String actualURL = homePage.getHomePageURL();
-        Assert.assertEquals(actualURL,"https://adjoe-qa-tasks.s3.eu-central-1.amazonaws.com/release/ver2.html");
+        Assert.assertEquals(actualURL,"ABC");
     }
     @Test(priority =3)
     public void startCollectingBtnVisible() {

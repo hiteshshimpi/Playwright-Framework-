@@ -11,7 +11,7 @@
 	</listeners>
 
 	<test name="Verify Start Collecting Gold Button is Functional ">
-		<parameter name="appURL" value="https://adjoe-qa-tasks.s3.eu-central-1.amazonaws.com/release/ver2.html"></parameter>
+		<parameter name="appURL" value="ABC"></parameter>
 		<parameter name="browserType" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.tests.TC_001_StartCollectingButtonClickable" />
